@@ -1,0 +1,30 @@
+# Ignorar archivos de usuario de Qt Creator (configuración local)
+*.pro.user
+*.pro.user.*
+
+# Ignorar la carpeta de compilación (build/)
+AnalizadorCV/build/
+
+# También ignorar temporales generados por Qt u otras herramientas
+*.autosave
+*.log
+*.obj
+*.o
+*.so
+*.dll
+*.exe
+*.moc
+*.qrc.depends
+*.qrc.info
+*.prl
+*.app
+*.DS_Store
+
+# Ignorar backup y temporales de editores
+*~
+*.swp
+*.bak
+*.tmp
+
+# Qt Creator CMake build folders (si usás CMake en vez de qmake)
+cmake-build-*/
