@@ -1,6 +1,7 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 
+#include <QImage>
 #include <QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -17,7 +18,12 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+protected:
+    void paintEvent(QPaintEvent *event) override;  // Override para paintEvent
+
 private:
     Ui::Widget *ui;
+    QImage fondo;  // Imagen de fondo
 };
+
 #endif // WIDGET_H

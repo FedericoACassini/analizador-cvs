@@ -13,20 +13,22 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
+  <property name="windowOpacity">
+   <double>24.000000000000000</double>
+  </property>
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-background-color: rgb(221, 228, 255);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>60</y>
-     <width>381</width>
-     <height>185</height>
+     <x>10</x>
+     <y>20</y>
+     <width>331</width>
+     <height>225</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -35,8 +37,15 @@ background-color: rgb(221, 228, 255);</string>
     </property>
     <item>
      <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Arial Rounded MT</family>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
+       <string notr="true">color: rgb(30, 40, 70);</string>
       </property>
       <property name="text">
        <string>Analizador de CVs</string>
@@ -53,6 +62,13 @@ background-color: rgb(221, 228, 255);</string>
       </property>
       <item row="0" column="0">
        <widget class="QLabel" name="usuarioLabel">
+        <property name="font">
+         <font>
+          <family>Arial Rounded MT</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(0, 0, 0);</string>
         </property>
@@ -61,15 +77,15 @@ background-color: rgb(221, 228, 255);</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEditUsuario">
-        <property name="styleSheet">
-         <string notr="true">color: rgb(0, 0, 0);</string>
-        </property>
-       </widget>
-      </item>
       <item row="1" column="0">
        <widget class="QLabel" name="passwordLabel">
+        <property name="font">
+         <font>
+          <family>Arial Rounded MT</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(0, 0, 0);</string>
         </property>
@@ -90,8 +106,24 @@ background-color: rgb(221, 228, 255);</string>
       </item>
       <item row="2" column="1">
        <widget class="QPushButton" name="pushButtonLogin">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(0, 0, 0);</string>
+         <string notr="true">QPushButton {
+    background-color: rgb(30, 40, 70);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(50, 70, 120); 
+}
+</string>
         </property>
         <property name="text">
          <string>Iniciar Sesión</string>
@@ -100,11 +132,37 @@ background-color: rgb(221, 228, 255);</string>
       </item>
       <item row="3" column="1">
        <widget class="QPushButton" name="pushButtonRegistrarse">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="mouseTracking">
+         <bool>true</bool>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::FocusPolicy::WheelFocus</enum>
+        </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(0, 0, 0);</string>
+         <string notr="true">QPushButton {
+    background-color: rgb(30, 40, 70);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(50, 70, 120); 
+}
+</string>
         </property>
         <property name="text">
          <string>Registrarse</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEditUsuario">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);</string>
         </property>
        </widget>
       </item>
